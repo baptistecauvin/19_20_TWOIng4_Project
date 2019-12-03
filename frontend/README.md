@@ -1,3 +1,4 @@
+Paul Chasseloup - Baptiste Cauvin
 # Frontend
 
 Ce dossier contiendra la partie frontend de votre projet.
