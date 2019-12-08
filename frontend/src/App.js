@@ -6,7 +6,7 @@ import Widget from './Components/Widgets/widgets'
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="test1">
         <h1>Dashboard</h1>
         <Widget/>
       </div>

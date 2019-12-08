@@ -1,34 +1,76 @@
 import React, { Component } from 'react';
-import "./widgets.css";
-import Widget2 from "./Widget2/widget2";
-import Widget1 from "./Widget1/widget1";
+import './widgets.css';
+import Widget1 from './Widget1/widget1';
+import Widget2 from './Widget2/widget2';
+import Widget3 from './Widget3/widget3';
+import Widget4 from './Widget4/widget4';
+import Widget5 from './Widget5/widget5';
+import Widget6 from './Widget6/widget6'
 
 class Widget extends Component {
   render() {
-
-    return(
+    return (
       <div className="container-fluid">
+
+        <div className="row">
+
           <div className="row">
 
-            <div className="col-md-6">
+            <div className="col-md-2">
+              <div className="Widget">
+                <Widget6/>
+              </div>
+            </div>
 
-                <div className="Widget1">
-                  <Widget1/>
+            <div className="col-md-10">
+
+                <div className="row justify-content-center">
+
+                    <div className="col-md-5">
+
+                        <div className="Widget">
+                          <Widget1/>
+                        </div>
+
+                    </div>
+
+                    <div className="col-md-5">
+
+                        <div className="Widget">
+                          <Widget2/>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div className="row justify-content-center">
+
+                  <div className="col-md-3">
+                    <div className="Widget">
+                      <Widget3/>
+                    </div>
+                  </div>
+
+                  <div className="col-md-3">
+                    <div className="Widget">
+                      <Widget4/>
+                    </div>
+                  </div>
+
+                  <div className="col-md-4">
+                    <div className="Widget">
+                      <Widget5/>
+                    </div>
+                  </div>
+
                 </div>
 
             </div>
-
-            <div className="col-md-6">
-
-                <div className="Widget2">
-                  <Widget2/>
-                </div>
-
-            </div>
-
-          </div>
+          </div> 
+        </div>
       </div>
-    )
+    );
   }
 }
 
