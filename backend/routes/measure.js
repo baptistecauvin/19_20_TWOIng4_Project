@@ -9,10 +9,11 @@ router.get('/:measureId', measure.findOne);
 
 /* DELETE  one measure */
 router.delete('/:measureId', measure.delete);
-/* update  one measure */
+
+/* UPDATE one measure */
 router.post('/:measureId', measure.update);
 
-/* create  one measure */
+/* CREATE one measure */
 router.put('/', measure.create);
 
 module.exports = router;

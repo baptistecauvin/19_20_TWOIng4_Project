@@ -14,6 +14,10 @@ const app = express();
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var userRouter = require('./routes/user');
+var sensorsRouter = require("./routes/sensors");
+var sensorRouter = require('./routes/sensor');
+var measuresRouter = require("./routes/measures");
+var measureRouter = require('./routes/measure');
 
 /*mongoose.Promise = global.Promise;
 const dbName = "DashboardProject";
@@ -35,5 +39,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use('/user', userRouter);
+app.use("/sensors", sensorsRouter);
+app.use('/sensor', sensorRouter);
+app.use("/measures", measuresRouter);
+app.use('/measure', measureRouter);
 
 module.exports = app;

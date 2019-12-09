@@ -7,12 +7,13 @@ var user = require('../Controllers/user.controller');
 /* GET one user */
 router.get('/:userId', user.findOne);
 
-/* DELETE  one user */
+/* DELETE one user */
 router.delete('/:userId', user.delete);
-/* update  one user */
+
+/* UPDATE one user */
 router.post('/:userId', user.update);
 
-/* create  one user */
+/* CREAEE one user */
 router.put('/', user.create);
 
 module.exports = router;
