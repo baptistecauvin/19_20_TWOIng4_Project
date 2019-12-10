@@ -1,4 +1,6 @@
 Paul Chasseloup - Baptiste Cauvin
+
+Video Loom frontend : https://www.loom.com/share/7ba4da33bee045bfa81207cb3b386166
 # Frontend
 
 Ce dossier contiendra la partie frontend de votre projet.
