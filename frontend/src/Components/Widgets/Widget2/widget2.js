@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import './widget2.css';
 import {
-    BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ReferenceLine,
+    BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ReferenceLine, ResponsiveContainer,
 } from 'recharts';
 
 const data = [
@@ -27,16 +27,13 @@ export default class Widget2 extends PureComponent {
   render() {
     return (
 
-      <div>
 
-        <h3>BarChart</h3>
+      <ResponsiveContainer aspect="2">
 
         <BarChart
-          width={500}
-          height={300}
           data={data}
           margin={{
-            top: 0, right: 100, left: 0, bottom: 0,
+            top: 0, right: 25, left: 0, bottom: 15,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
@@ -48,7 +45,9 @@ export default class Widget2 extends PureComponent {
           <Bar dataKey="TemperatureMin" fill="#8884d8" />
           <Bar dataKey="TemperatureMax" fill="#82ca9d" />
         </BarChart>
-      </div>
+      </ResponsiveContainer>
     );
   }
 }
+
+ //<h3>BarChart</h3>

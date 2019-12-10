@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import './widget1.css';
 import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
+  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
 } from 'recharts';
 
 //proviens du site http://recharts.org/en-US/examples
@@ -29,28 +29,25 @@ export default class Widget1 extends PureComponent {
 
     return (
 
-      <div>
+        <ResponsiveContainer aspect="2">
 
-      	<h3>LineChart</h3>
-
-	      <LineChart
-	        width={500}
-	        height={300}
-	        data={data}
-	        margin={{
-	          top: 0, right: 100, left: 0, bottom: 0,
-	        }}
-	      >
-	        <CartesianGrid strokeDasharray="3 3" />
-	        <XAxis dataKey="name" />
-	        <YAxis />
-	        <Tooltip />
-	        <Legend />
-	        <Line type="monotone" dataKey="TempSoir" stroke="#8884d8" activeDot={{ r: 8 }} />
-	        <Line type="monotone" dataKey="TempMatin" stroke="#82ca9d" />
-	      </LineChart>
-
-      </div>
+      	      <LineChart
+      	        data={data}
+      	        margin={{
+      	          top: 0, right: 25, left: 0, bottom: 15,
+      	        }}
+      	      >
+      	        <CartesianGrid strokeDasharray="3 3" />
+      	        <XAxis dataKey="name" />
+      	        <YAxis />
+      	        <Tooltip />
+      	        <Legend />
+      	        <Line type="monotone" dataKey="TempSoir" stroke="#8884d8" activeDot={{ r: 8 }} />
+      	        <Line type="monotone" dataKey="TempMatin" stroke="#82ca9d" />
+      	      </LineChart>
+        </ResponsiveContainer>
     );
   }
 }
+
+//<h3>LineChart</h3>

@@ -1,17 +1,34 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 import './widget6.css';
+
 
 class Widget6 extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+
+    super(props);
+
     this.state = {
-      idUser: 1,
-      location: "France",
-      personInHouse: 5,
-      houseSize: "medium"
-    };
+      location: '',
+      personInHouse: '',
+      houseSize: '',
+    }
   }
+
+  componentDidMount(){
+          axios.get('http://localhost:3001/user/' + '5ddba3c0fc13ae6c90000514')
+            .then(response => {
+              this.setState({
+                location: response.data.location,
+                personsInHouse: response.data.personsInHouse,
+                houseSize: response.data.houseSize,
+            })
+      })
+      .catch((error) => { console.log(error) }); 
+}
+
 
   render() {
     return (
@@ -20,11 +37,11 @@ class Widget6 extends Component {
 
         <h3>User Profil</h3>
 
-        <div>Id: {this.state.idUser}</div>
+        <div>Id: 1</div>
 
         <div>Location: {this.state.location}</div>
 
-        <div>Nombre de personne dans la maison: {this.state.personInHouse}</div>
+        <div>Nombre de personne dans la maison: {this.state.personsInHouse}</div>
 
         <div>Taille de la maison: {this.state.houseSize}</div>
 

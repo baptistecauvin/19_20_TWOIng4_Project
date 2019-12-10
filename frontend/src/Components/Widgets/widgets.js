@@ -26,7 +26,7 @@ class Widget extends Component {
 
                 <div className="row justify-content-center">
 
-                    <div className="col-md-5">
+                    <div className="col-md-6">
 
                         <div className="Widget">
                           <Widget1/>
@@ -34,7 +34,7 @@ class Widget extends Component {
 
                     </div>
 
-                    <div className="col-md-5">
+                    <div className="col-md-6">
 
                         <div className="Widget">
                           <Widget2/>
@@ -46,13 +46,13 @@ class Widget extends Component {
 
                 <div className="row justify-content-center">
 
-                  <div className="col-md-3">
+                  <div className="col-md-4">
                     <div className="Widget">
                       <Widget3/>
                     </div>
                   </div>
 
-                  <div className="col-md-3">
+                  <div className="col-md-4">
                     <div className="Widget">
                       <Widget4/>
                     </div>
