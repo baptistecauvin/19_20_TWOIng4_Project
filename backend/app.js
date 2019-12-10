@@ -19,16 +19,10 @@ var sensorRouter = require('./routes/sensor');
 var measuresRouter = require("./routes/measures");
 var measureRouter = require('./routes/measure');
 
-/*mongoose.Promise = global.Promise;
-const dbName = "DashboardProject";
-const dbURL = `mongodb://localhost:27017/${dbName}`;
-
-// Connecting to the database
-mongoose.connect(dbURL, {
-	userNewUrlParser: true
-});*/
-
-//var app = express();
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
 
 app.use(logger("dev"));
 app.use(express.json());

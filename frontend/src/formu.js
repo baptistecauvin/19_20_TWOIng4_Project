@@ -1,8 +1,10 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input/*, FormText */} from 'reactstrap';
+import ListeUser from './listeUser';
 
 const Formu = (props) => {
   return (
+    <div>
     <Form>
 
       <FormGroup>
@@ -24,7 +26,7 @@ const Formu = (props) => {
 
 
       <FormGroup>
-        <Label for="exampleSelect">Select</Label>
+        <Label for="exampleSelect">Taille de la maison</Label>
         <Input type="select" name="select" id="exampleSelect">
           <option>Small</option>
           <option>Medium</option>
@@ -35,38 +37,10 @@ const Formu = (props) => {
       <Button>Submit</Button>
 
     </Form>
+
+    <ListeUser/>
+    </div>
   );
 }
 
 export default Formu;
-
-/*<FormGroup tag="fieldset">
-          <legend>houseSize</legend>
-
-          <FormGroup check>
-
-            <Label check>
-              <Input type="radio" name="radio1" />{' '}
-              Small
-            </Label>
-
-          </FormGroup>
-
-          <FormGroup check>
-
-            <Label check>
-              <Input type="radio" name="radio1" />{' '}
-              Medium
-            </Label>
-          </FormGroup>
-
-          <FormGroup check>
-
-            <Label check>
-              <Input type="radio" name="radio1"  />{' '}
-              Big
-            </Label>
-
-          </FormGroup>
-
-      </FormGroup>*/

@@ -10,7 +10,7 @@ import {
 import './App.css';
 import {BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Formu from './formu';
-import Routes from './routes';
+//import Routes from './routes';
 import Widget from './Components/Widgets/widgets'
 
 //Navbar from https://reactstrap.github.io/components/navbar/
@@ -28,15 +28,15 @@ class App extends Component {
 	         
 	            <Nav className="mr-auto" navbar>
 	              <NavItem>
-	                <NavLink href="/">Accueil</NavLink>
+	                <NavLink> <Link to="/" className="test">Accueil</Link> </NavLink>
 	              </NavItem>
 	              <NavItem>
-	                <NavLink href="/formu">Formulaire</NavLink>
+	                <NavLink> <Link to="/formu" className="test">Formulaire</Link></NavLink>
 	              </NavItem>
 	              
 	            </Nav>
 	        	<NavbarText >Hello</NavbarText>
-	        	
+
 	          
 	    	</Navbar>
 
