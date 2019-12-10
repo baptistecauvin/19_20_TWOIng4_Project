@@ -1,6 +1,11 @@
 Paul Chasseloup - Baptiste Cauvin
 
 Video Loom frontend : https://www.loom.com/share/7ba4da33bee045bfa81207cb3b386166
+
+Nous n'avons pas pu le montrer sur la video loom, mais les 3 widgets du bas (Temperature, Humidité et airpollution) change de couleur en fonction de la valeur récuperée
+Temperature à un fond bleu en dessous de 15°C et rouge au dessus
+Humidité à un fond vert en dessous de 50 et rouge au dessus
+Airpollution à un fond rouge au dessus de 50 et vert en dessous
 # Frontend
 
 Ce dossier contiendra la partie frontend de votre projet.
