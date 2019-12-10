@@ -26,23 +26,29 @@ export default class Widget2 extends PureComponent {
 
   render() {
     return (
-      <BarChart
-        width={500}
-        height={300}
-        data={data}
-        margin={{
-          top: 5, right: 30, left: 20, bottom: 5,
-        }}
-      >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="name" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <ReferenceLine y={0} stroke="#000" />
-        <Bar dataKey="TemperatureMin" fill="#8884d8" />
-        <Bar dataKey="TemperatureMax" fill="#82ca9d" />
-      </BarChart>
+
+      <div>
+
+        <h3>BarChart</h3>
+
+        <BarChart
+          width={500}
+          height={300}
+          data={data}
+          margin={{
+            top: 0, right: 100, left: 0, bottom: 0,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <ReferenceLine y={0} stroke="#000" />
+          <Bar dataKey="TemperatureMin" fill="#8884d8" />
+          <Bar dataKey="TemperatureMax" fill="#82ca9d" />
+        </BarChart>
+      </div>
     );
   }
 }
