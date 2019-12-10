@@ -2,6 +2,8 @@
 
 Lien du trello : https://trello.com/projetreact1/account
 
+Le wireframe se trouve sous format .pdf dans le dossier du projet
+
 # Projet de fin de semestre
 
 ## Introduction
