@@ -1,6 +1,7 @@
 Paul Chasseloup - Baptiste Cauvin
 
 Video Loom frontend : https://www.loom.com/share/7ba4da33bee045bfa81207cb3b386166
+2eme lien loom car je crois que le premier lien ne fonctionne pas https://www.loom.com/share/73afc631d9e543c4b0746801510c4349
 
 Nous n'avons pas pu le montrer sur la video loom, mais les 3 widgets du bas (Temperature, Humidité et airpollution) change de couleur en fonction de la valeur récuperée
 Temperature à un fond bleu en dessous de 15°C et rouge au dessus
