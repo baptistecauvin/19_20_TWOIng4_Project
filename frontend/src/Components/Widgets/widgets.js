@@ -29,6 +29,7 @@ class Widget extends Component {
                     <div className="col-md-6">
 
                         <div className="Widget">
+                          <h2>Line Chart</h2>
                           <Widget1/>
                         </div>
 
@@ -37,6 +38,7 @@ class Widget extends Component {
                     <div className="col-md-6">
 
                         <div className="Widget">
+                          <h2>Bar Chart</h2>
                           <Widget2/>
                         </div>
 

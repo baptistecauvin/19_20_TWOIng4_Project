@@ -13,7 +13,7 @@ router.delete('/:userId', user.delete);
 /* UPDATE one user */
 router.post('/:userId', user.update);
 
-/* CREAEE one user */
+/* CREATE one user */
 router.put('/', user.create);
 
 module.exports = router;

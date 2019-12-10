@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import './widget6.css';
 
 
@@ -18,7 +17,8 @@ class Widget6 extends Component {
   }
 
   componentDidMount(){
-          axios.get('http://localhost:3001/user/' + '5ddba3c0fc13ae6c90000514')
+          //axios.get('http://localhost:3001/user/' + '5ddba3c0fc13ae6c90000514')
+          axios.get('http://localhost:3001/user/5ddba3c0fc13ae6c90000514')
             .then(response => {
               this.setState({
                 location: response.data.location,

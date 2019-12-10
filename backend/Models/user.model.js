@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
 
-
 const userSchema = new mongoose.Schema(
   {
-  	//Pas besoin de rcupérer l'id ?
-  	//id: String,
-    location: String,
+    location:{ 
+      type: String,
+      required: true,
+    },
     personsInHouse: Number,
     houseSize: String
   },

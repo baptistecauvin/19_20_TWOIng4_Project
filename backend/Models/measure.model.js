@@ -2,7 +2,11 @@ const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema(
   {
-    type: String,
+    type:{ 
+      type: String,
+      required: true,
+    },
+    
     creationDate: String,
     value : Number,
     sensorId:  {

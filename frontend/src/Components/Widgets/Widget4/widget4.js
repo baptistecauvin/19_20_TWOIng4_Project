@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
 import './widget4.css';
 
 class Widget4 extends Component {
@@ -17,7 +16,8 @@ class Widget4 extends Component {
   }
 
   componentDidMount(){
-          axios.get('http://localhost:3001/measure/' + '5ddbaac6fc13ae4b49000000')
+          //axios.get('http://localhost:3001/measure/' + '5ddbaac6fc13ae4b49000000')
+          axios.get('http://localhost:3001/measure/5ddbaac6fc13ae4b49000000')
             .then(response => {
               this.setState({
                 type: response.data.type,

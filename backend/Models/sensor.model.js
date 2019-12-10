@@ -2,7 +2,10 @@ const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema(
   {
-    creationDate: Date,
+    creationDate:{ 
+      type: Date,
+      required: true,
+    },
     userId:  {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'

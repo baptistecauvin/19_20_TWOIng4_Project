@@ -1,14 +1,14 @@
 const User = require('../Models/user.model.js');
 
-// A modifier en conséquence, exemple du cours
+
 // Create and Save a new User
 exports.create = (req, res) => {
   // Validate request
-  if (!req.body.firstName) {
-    // If firstName is not present in body reject the request by
+  if (!req.body.location) {
+    // If location is not present in body reject the request by
     // sending the appropriate http code
     return res.status(400).send({
-      message: 'firstName can not be empty'
+      message: 'Location can not be empty'
     });
   }
 
@@ -71,13 +71,12 @@ exports.findOne = (req, res) => {
     });
 };
 
-//A Modifier aussi
 // Update a User identified by the UserId in the request
 exports.update = (req, res) => {
   // Validate Request
-  if (!req.body.firstName) {
+  if (!req.body.location) {
     return res.status(400).send({
-      message: 'first name can not be empty'
+      message: 'Location can not be empty'
     });
   }
 

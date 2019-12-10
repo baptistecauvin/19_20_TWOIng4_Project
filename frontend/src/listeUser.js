@@ -1,7 +1,6 @@
 
 import axios from 'axios';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './listeUser.css'
 //import { Button, Table, Col, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
