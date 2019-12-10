@@ -1,6 +1,7 @@
-## Paul Chasseloup - Baptiste Cauvin
+# Paul Chasseloup - Baptiste Cauvin
 
-# Lien du trello : https://trello.com/projetreact1/account
+Lien du trello : https://trello.com/projetreact1/account
+
 # Projet de fin de semestre
 
 ## Introduction
