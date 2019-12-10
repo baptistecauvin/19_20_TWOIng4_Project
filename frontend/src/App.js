@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
@@ -10,6 +8,9 @@ import {
   NavbarText
 } from 'reactstrap';
 import './App.css';
+import {BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Formu from './formu';
+import Routes from './routes';
 import Widget from './Components/Widgets/widgets'
 
 //Navbar from https://reactstrap.github.io/components/navbar/
@@ -20,6 +21,7 @@ class App extends Component {
     return (
       <div className="test1">
 
+      	<Router>
 	        <Navbar color="light" light expand="md">
 
 	          <NavbarBrand href="/">DashBoard</NavbarBrand>
@@ -29,16 +31,24 @@ class App extends Component {
 	                <NavLink href="/">Accueil</NavLink>
 	              </NavItem>
 	              <NavItem>
-	                <NavLink href="/">Formulaire</NavLink>
+	                <NavLink href="/formu">Formulaire</NavLink>
 	              </NavItem>
 	              
 	            </Nav>
 	        	<NavbarText >Hello</NavbarText>
+	        	
 	          
 	    	</Navbar>
 
+	    	<Switch>
+        		<Route exact path="/" component={Widget} />
+				<Route path="/formu" component={Formu} />
+      		</Switch>
 
-        	<Widget/>
+	    </Router>	
+
+
+       
       </div>
     );
   }
