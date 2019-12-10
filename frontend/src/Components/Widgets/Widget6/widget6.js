@@ -37,8 +37,6 @@ class Widget6 extends Component {
 
         <h3>User Profil</h3>
 
-        <div>Id: 1</div>
-
         <div>Location: {this.state.location}</div>
 
         <div>Nombre de personne dans la maison: {this.state.personsInHouse}</div>
