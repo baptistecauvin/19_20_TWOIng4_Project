@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './widget3.css';
 
+const temp = 15;
+
 class Widget3 extends Component {
 
   constructor(props) {
@@ -31,7 +33,7 @@ class Widget3 extends Component {
   render() {
     return (
 
-      <div> 
+      <div className={this.state.value < temp ? 'color-blue' : 'color-red'}> 
 
         <h3>{this.state.type}</h3>
 

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './widget5.css';
 
+const pollution = 50;
+
 class Widget5 extends Component {
 
   constructor(props) {
@@ -31,7 +33,7 @@ class Widget5 extends Component {
   render() {
     return (
 
-      <div> 
+      <div className={this.state.value < pollution ? 'color-green' : 'color-red'}> 
 
         <h3>{this.state.type}</h3>
 

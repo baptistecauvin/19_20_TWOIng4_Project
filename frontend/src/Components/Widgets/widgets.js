@@ -49,19 +49,19 @@ class Widget extends Component {
                 <div className="row justify-content-center">
 
                   <div className="col-md-4">
-                    <div className="Widget">
+                    <div>
                       <Widget3/>
                     </div>
                   </div>
 
                   <div className="col-md-4">
-                    <div className="Widget">
+                    <div>
                       <Widget4/>
                     </div>
                   </div>
 
                   <div className="col-md-4">
-                    <div className="Widget">
+                    <div>
                       <Widget5/>
                     </div>
                   </div>

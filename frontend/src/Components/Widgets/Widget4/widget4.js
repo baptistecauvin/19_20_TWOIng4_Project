@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './widget4.css';
 
+const humidit1 = 40;
+const humidit2 = 60;
+
 class Widget4 extends Component {
 
   constructor(props) {
@@ -31,7 +34,7 @@ class Widget4 extends Component {
   render() {
     return (
 
-      <div> 
+       <div className={this.state.value < humidit1 && this.state.value > humidit2 ? 'color-red' : 'color-green'}> 
 
         <h3>{this.state.type}</h3>
 

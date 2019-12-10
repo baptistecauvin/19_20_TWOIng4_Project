@@ -4,7 +4,7 @@ import ListeUser from './listeUser';
 
 const Formu = (props) => {
   return (
-    <div>
+    <div className="container">
     <Form>
 
       <FormGroup>
