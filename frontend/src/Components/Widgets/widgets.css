@@ -2,6 +2,10 @@
   border: 1px solid black;
   border-radius: 5px;
   background-color: #3e3e5b;
+  
+  :hover {
+		background-color: #ed1212;
+	}
 }
 
 .Widget2{
