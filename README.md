@@ -1,4 +1,6 @@
-Paul Chasseloup - Baptiste Cauvin
+## Paul Chasseloup - Baptiste Cauvin
+
+# Lien du trello : https://trello.com/projetreact1/account
 # Projet de fin de semestre
 
 ## Introduction
@@ -9,10 +11,5 @@ Les deux repertoires ont été initialisé pour vous aider à démarrer le proje
 
 Chacun de ces repertoires contient un README.md qui vous pouvez vous approprier. Nous vous encourageons à le faire en y mettant toute les informations nécessaires à la compréhension de votre projet
 
-## Instructions
-
-Les instructions sont à retrouver dans le pdf mis à disposition sur campus.
 
 **Le non respect de ces instructions entraînera des pertes de points alors prenez le temps de tout lire et de poser des questions si vous ne comprenez pas**
-
-Pour rappel, la probabilité de recevoir une réponse à un mail envoyé quelques heures avant le rendu est très proche de 0.
